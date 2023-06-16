@@ -1,0 +1,130 @@
+# ps
+  PID USER       VSZ STAT COMMAND
+    1 root      1444 S    /sbin/init
+    2 root         0 SW   [kthreadd]
+    3 root         0 IW<  [rcu_gp]
+    4 root         0 IW<  [rcu_par_gp]
+    6 root         0 IW<  [kworker/0:0H-kb]
+    7 root         0 IW   [kworker/u4:0-ev]
+    8 root         0 IW<  [mm_percpu_wq]
+    9 root         0 SW   [ksoftirqd/0]
+   10 root         0 IW   [rcu_preempt]
+   11 root         0 IW   [rcu_sched]
+   12 root         0 IW   [rcu_bh]
+   13 root         0 SW   [migration/0]
+   14 root         0 SW   [cpuhp/0]
+   15 root         0 SW   [cpuhp/1]
+   16 root         0 SW   [migration/1]
+   17 root         0 SW   [ksoftirqd/1]
+   19 root         0 IW<  [kworker/1:0H-kb]
+   20 root         0 SW   [kdevtmpfs]
+   21 root         0 IW<  [netns]
+   24 root         0 SW   [rcu_tasks_kthre]
+   29 root         0 IW   [kworker/1:1-ubi]
+  256 root         0 SW   [oom_reaper]
+  257 root         0 IW<  [writeback]
+  259 root         0 IW<  [crypto]
+  261 root         0 IW<  [kblockd]
+  285 root         0 SW   [skb_free_task]
+  286 root         0 SW   [watchdogd]
+  302 root         0 IW<  [rpciod]
+  303 root         0 IW<  [kworker/u5:0]
+  304 root         0 IW<  [xprtiod]
+  316 root         0 SW   [kswapd0]
+  410 root         0 IW<  [nfsiod]
+  446 root         0 IW<  [kthrotld]
+  490 root         0 SW   [hwrng]
+  508 root         0 SW   [scsi_eh_0]
+  509 root         0 IW<  [scsi_tmf_0]
+  544 root         0 SW   [spi1]
+  589 root         0 IW<  [ipv6_addrconf]
+  610 root         0 DW   [sfp_polling]
+  612 root         0 SW   [bpm_monitor]
+  645 root         0 SW   [ubi_bgt0d]
+  682 root         0 IW<  [kworker/1:1H-kb]
+  683 root         0 IW<  [kworker/0:1H-kb]
+  767 root         0 SW   [ubifs_bgt0_10]
+ 1131 root         0 SW   [spdsvc_timer_th]
+ 1155 root         0 SW   [fc_evt]
+ 1156 root         0 SW   [fc_timer]
+ 1157 root         0 SW   [bcmFlwStatsTask]
+ 1173 root         0 SW   [bcmxtm_rx]
+ 1203 root         0 SW   [sw0HouseKeeping]
+ 1256 root         0 SW   [bcmsw_rx]
+ 1278 root         0 IW   [kworker/u4:2]
+ 1306 root         0 SW   [enet-kthrd]
+ 1492 root         0 SW   [kbdmf_shell]
+ 1524 root      2884 S    dbus-daemon --syslog --fork --print-pid 4 --print-address 6 --config-file /share/dbus-1/system.conf
+ 1626 root      1804 S<   /sbin/udevd --daemon
+ 1933 root      1444 R    ps
+ 2458 root      1740 S    pfs -A
+ 2469 root     13224 S    swwd
+ 3016 root      2184 S    pcd -f system.pcd
+ 3017 root      6416 S    /bin/tbus_firewall
+ 3018 root     31520 SN   /sbin/syslog-ng -F -f /var/etc/syslog-ng.conf
+ 3019 root     22304 S    /bin/sdb -f
+ 3020 root      2752 SN   /bin/dispatcher
+ 3022 root     13300 S    /sbin/heartbeat
+ 3109 root         0 IW<  [cfg80211]
+ 3172 root         0 SWN  [uh-wlan]
+ 3173 root         0 SW   [wl0-kthrd]
+ 3174 root         0 SW   [wfd0-thrd]
+ 3354 root      3048 S    iptables server /var/tmp/ipt_svr
+ 3515 1         1744 S    portmap
+ 3537 root         0 IW<  [bond0]
+ 3717 root         0 SW<  [loop0]
+ 3724 root         0 IW<  [ext4-rsv-conver]
+ 3739 root      1444 S    {syslog-ng-monit} /bin/sh /sbin/syslog-ng-monitor
+ 3744 root      1444 S    sleep 7200
+ 3753 root      1444 S    {steer_plugin_lo} /bin/sh /etc/init.d/steer_plugin_loop
+ 3764 root      1444 S    {remote_monitor_} /bin/sh /etc/init.d/remote_monitor_loop
+ 3770 root      1444 S    {wall_rpcd_loop} /bin/sh /etc/init.d/wall_rpcd_loop
+ 4110 root      8016 S    ceventd
+ 4177 root      7512 S    sbdc
+ 4383 root         0 SW   [dsl0]
+ 4399 root      7652 S    /bin/wlcfg_monitor -c 203.0.113.2
+ 4503 root         0 IW   [kworker/1:2-eve]
+ 5007 root     29844 S    /bin/eap_tls_peer
+ 7222 root      9660 S    sdbh_usagestats /var/etc/usagestats.conf
+ 7258 root      9688 S    /sbin/sdbh_qtncrash
+ 7350 root      7756 S    acsd2
+ 7459 root      5572 S<   [resmon]
+ 7530 root      5112 S    /sbin/cwmp_conn_mon
+ 7553 root      9660 S    sdbh_captiveportal
+ 7557 root      9968 S    sdbh_dpi
+ 7581 root      4984 S    {dhcpd} dhcp4d -f -d -q -cf /var/etc/dhcpd.conf -lf /var/etc/dhcpd.leases -pf /var/run/dhcpd.pid br1
+ 7590 root      5104 S    /sbin/qtnmon
+ 7613 root     11268 S    hostapd -B /tmp/wl0_hapd.conf
+ 7614 root      6476 S    /bin/cwmpSrvr
+ 7615 root      8320 S    /bin/cwmp
+ 7651 root     19244 S    push_tr232
+ 7686 root      7520 S    [eapd]
+ 7786 root      2656 S    /bin/inetd
+ 8106 root     23580 S    lhdd -i br1 -r 192.168.1.1 24 254 -p 300 -l /var/etc/dhcpd.leases.mtpa -l6 /var/etc/dhcp6d.leases.mtpa
+ 8129 root      6416 S    /sbin/jdn
+ 8130 root     76172 S    /bin/voipexe
+ 8131 root      2780 S    /sbin/logretrieve
+ 8132 root     31932 S    /usr/sbin/logproxy
+ 8133 root      5268 S    /sbin/log_monitor
+ 8134 root      9932 S    /sbin/ccmp
+ 8213 root      7820 S    /usr/sbin/wall_rpcd -a 203.0.113.1 -p 10000
+ 8225 root      8112 S    /usr/sbin/rm-daemon --host 203.0.113.2 --debug-file /tmp/remote-daemon.log --debug-level 1
+ 8263 root      1444 S    /usr/bin/udpsvd -E 192.168.255.1 69 tftpd -l -r -u nobody /lib/firmware
+ 8306 root      882m S    dockerd --storage-driver=overlay2 --iptables=false
+ 8333 root      4092 S    {dhcpd} dhcp6d -6 -f -d -q -cf /var/etc/dhcp6d1.conf -lf /var/etc/dhcp6d.leases -pf /var/run/dhcp6d.pid br1
+ 8444 root      2592 S    radvd -d1 -C/var/etc/radvd.conf
+ 8446 root      2592 S    radvd -d1 -C/var/etc/radvd.conf
+ 8550 root      845m S    docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --metrics-interval=0 --start-time
+ 8590 nobody    2964 S    /bin/dnsmasq -k
+ 8646 root      9660 SN   /sbin/sdbh_arphelper
+ 8775 root         0 IW   [kworker/u4:1-ev]
+14793 root      1444 R    /usr/sbin/telnetd -i -l /bin/nsh
+14794 root      6728 S    /bin/nsh
+15314 root      8812 S    /usr/sbin/steer-plugin-airwall --band 2 --debug-level 0 --debug-file /tmp/steer-plugin.log --host 203.0.113.2 --ex
+15549 root      1444 S    /bin/sh
+16813 root         0 IW   [kworker/0:1-eve]
+17338 root      9660 S    /sbin/sdbh_channel_stats
+18078 root      1444 S    ./ash
+20633 root      4856 S    qevt-client -h 203.0.113.2 -d /var/log/ -e &
+25761 root         0 IW   [kworker/0:2-eve]
+30753 root         0 SWN  [jffs2_gcd_mtd3]
